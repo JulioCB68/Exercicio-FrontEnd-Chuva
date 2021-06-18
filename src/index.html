@@ -5,14 +5,16 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 	<link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
-	<link rel="stylesheet" href="../node_modules/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../node_modules/font-awesome/css/font-awesome.css">
 	<link rel="stylesheet" href="assets/css/styles.css">
 	<title> Teste - Exercicio FrontEnd </title>
 </head>
 
 <body>
 	<div class="container_grid">
+
 		<aside>
 			<div class="aside_header">
 				<h1>SLACA 2019</h1>
@@ -87,13 +89,86 @@
 			</div>
 		</header>
 
-		<main></main>
+		<main>
+			<div class="title_main">
+				<h1> Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e 15 anos, do
+					município
+					de Campinas/SP </h1>
+			</div>
+			<div class="buttons">
+				<a class="main-button" href=""><i class="fas fa-download"></i> Download </a>
+				<a class="main-button" href=""><i class="fas fa-star"></i></a>
+				<a class="main-button" href=""><i class="fas fa-star"></i></a>
+			</div>
+			<div class="image_main">
+				<img class="video img-fluid" src="assets/images/vídeo apresentação.png" alt="">
+			</div>
+			<div class="details">
+				<div class="card_details">
+					<div class="card_header">
+						<h1>Detalhes</h1>
+					</div>
+					<div class="card_content">
+						<div class="info">
+							<p>Tipo de Apresentação: <span class="bold_info"> Pôster </span></p>
+							<p>Eixo temático: <span class="bold_info"> Alimentação e saúde (AS) </span></p>
+							<p>Palavras-chaves: <span class="bold_info"> Alimentos funcionais, alimentação escolar.
+								</span></p>
+						</div>
+						<div class="authors">
+							<h4> Autores: </h4>
+							<p> Galileo Galilei¹ </p>
+							<p> Berta Lange de Morretes² </p>
+							<p> Isaac Newton³ </p>
+							<p> Cesar Lattes¹ </p>
+							<p> Stephen Hawking⁴ </p>
+						</div>
+						<div class="info_footer">
+							<p> ¹Universidade Estadual de Campinas </p>
+							<p> ²Universidade de São Paulo </p>
+							<p> ³Instituto Nacional de Pesquisas Espaciais </p>
+							<p> ⁴Universidade Federal do Rio de Janeiro </p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="main_more">
+				<div class="summary">
+					<div class="SD_header">
+						<h1> Resumo </h1>
+					</div>
+					<div id="collapse_content" class="summary_content"></div>
+				</div>
+				<div class="discussions">
+					<div class="SD_header">
+						<h1> Discussões </h1>
+					</div>
+					<div  class="discussion_content">
+						<h1> Compartilhe suas ideias ou dúvidas com os autores! </h1>
+						<div class="container_icons">
+							<img src="assets/icons/icone1.png" alt="">
+							<img src="assets/icons/icone2.png" alt="">
+							<img src="assets/icons/icone3.png" alt="">
+						</div>
+						<p>Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus questionamentos ou sugestões para o autor!</p>
+						<button class="btn_create_topic"><i class="fas fa-plus"></i>criar tópico</button>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<footer>
+			<div class="image_footer">
+				<img src="assets/images/imagem_footer.svg" alt="">
+			</div>
+		</footer>
+
 	</div>
 
 
 
 
-
+	<script src="assets/js/main.js"></script>
 	<script src="../node_modules/jquery/dist/jquery.min.js"></script>
 	<script src="../node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
 	<script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
