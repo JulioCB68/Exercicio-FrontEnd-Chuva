@@ -430,19 +430,6 @@ p {
 	padding: 1rem;
 }
 
-.summary_active {
-}
-
-
-@keyframes open {
-	from {
-	  
-	}
-  to {
-	
-	}
-  }
-
 .see-more {
 	outline: none;
 	border: none;
@@ -585,9 +572,9 @@ textarea {
 	height: 10rem;
 }
 
-.hover:hover{
+.toggle_height {
 	height: auto;
-}
+} 
 
 .discussion_comments h1 {
 	font-family: 'Quicksand', sans-serif;
@@ -639,6 +626,7 @@ textarea {
 	font-size: 0.875rem;
 	line-height: 1.188rem;
 	color: #757575;
+	cursor: pointer;
 }
 
 .container_icon_footer {
