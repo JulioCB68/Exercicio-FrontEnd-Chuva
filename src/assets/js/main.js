@@ -56,11 +56,9 @@ function ChangeStateCreate() {
 }
 
 
-function dadadsadas() {
+function toggleAnswer() {
 	const hover = document.getElementById('hover');
-	const hover1 = document.getElementById('hover_1');
 	const toggle = 'toggle_height';
 
 	hover.classList.toggle(toggle)
-	hover1.classList.toggle(toggle)
 }
