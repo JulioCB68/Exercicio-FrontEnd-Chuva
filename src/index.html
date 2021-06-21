@@ -15,7 +15,7 @@
 <body>
 	<div class="container_grid">
 
-		<aside>
+		<aside id="aside">
 			<div class="aside_header">
 				<h1>SLACA 2019</h1>
 			</div>
@@ -57,8 +57,12 @@
 				</ul>
 			</nav>
 		</aside>
-
 		<header>
+			<div onclick="togglemenu()" class="navssss">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
 			<div class="main_header">
 				<div class="title">
 					<h5>Anais do Simpósio Latino Americano de Ciências de Alimentos</h5>
@@ -143,15 +147,116 @@
 					<div class="SD_header">
 						<h1> Discussões </h1>
 					</div>
-					<div  class="discussion_content">
-						<h1> Compartilhe suas ideias ou dúvidas com os autores! </h1>
-						<div class="container_icons">
-							<img src="assets/icons/icone1.png" alt="">
-							<img src="assets/icons/icone2.png" alt="">
-							<img src="assets/icons/icone3.png" alt="">
+					<div class="testedeborda">
+						<div id="create_topic" class="discussion_content">
+							<h1> Compartilhe suas ideias ou dúvidas com os autores! </h1>
+							<div class="container_icons">
+								<img src="assets/icons/icone1.png" alt="">
+								<img src="assets/icons/icone2.png" alt="">
+								<img src="assets/icons/icone3.png" alt="">
+							</div>
+							<p>Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus
+								questionamentos ou sugestões para o autor!</p>
+							<button onclick="ChangeState()" class="btn_create_topic"><i class="fas fa-plus"></i>cria tópico</button>
 						</div>
-						<p>Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus questionamentos ou sugestões para o autor!</p>
-						<button class="btn_create_topic"><i class="fas fa-plus"></i>criar tópico</button>
+						<div id="write_topic" class="discussion_content">
+							<h1> Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores! </h1>
+							<div class="container_input">
+								<label for="">Assunto</label>
+								<input type="text" placeholder="Defina um tópico sucinto para notificar os autores...">
+								<label for="">Conteúdo</label>
+								<textarea cols="3" rows="5"></textarea>
+							</div>
+							<button onclick="ChangeStateFeedback()" class="btn_create_topic"> Enviar </button>
+						</div>
+						<div id="feedback" class="discussion_content">
+							<h1> Seu tópico foi enviado com sucesso! :D </h1>
+							<p> Agradecemos por sua contribuição, uma notificação será enviada ao seu email assim que seu tópico for
+								respondido! </p>
+							<p> Descubra outros trabalhos! </p>
+							<button onclick="ChangeStateCreate()" class="btn_create_topic"><i class="fas fa-plus"></i>criar novo
+								tópico</button>
+						</div>
+						<div id="comments" class="discussion_comments color_back position">
+							<div class="back">
+								<h1 class="padding"> Assunto da pergunta aparece aqui </h1>
+								<p class="name padding"> Carlos Henrique Santos </p>
+								<p class="comment padding"> Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da
+									análise da
+									dimensão e impacto de processo formativo situado impacto de processo formativo processo... </p>
+							</div>
+							<div class="front">
+								<div class="front_alignment">
+									<i class="padding fas fa-check-double"></i>
+									<p class="padding"> Aguardando feedback dos autores </p>
+									<a href="">Editar tópico</a>
+								</div>
+							</div>
+						</div>
+						<div class="discussion_comments">
+							<h1> Assunto da pergunta aparece aqui </h1>
+							<p class="name"> Carlos Henrique Santos </p>
+							<p class="comment"> Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da
+								dimensão e impacto de processo formativo situado impacto de processo formativo processo... </p>
+							<div class="container_footer">
+								<i class="fas fa-ellipsis-v"></i>
+								<div class="container_icon_footer">
+									<i class="fas fa-heart"></i>
+								</div>
+								<p> 1 Like </p>
+								<p> 1 Resposta </p>
+							</div>
+						</div>
+						<div class="discussion_comments hover">
+							<h1> Assunto da pergunta aparece aqui </h1>
+							<p class="name"> Carlos Henrique Santos </p>
+							<p class="comment"> Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da
+								dimensão e impacto de processo formativo situado impacto de processo formativo processo... </p>
+							<div class="container_footer">
+								<i class="fas fa-ellipsis-v"></i>
+								<div class="container_icon_footer">
+									<i class="fas fa-heart"></i>
+								</div>
+								<p> 4 Like </p>
+								<p> 4 Resposta </p>
+							</div>
+							<div class="hover_comments">
+								<div class="hover_header">
+									<h1> Adriano da Silva </h1>
+									<div class="ndamdnamdna">
+										<p>Autor</p>
+										<i class="padding fas fa-check-double"></i>
+									</div>
+								</div>
+								<div class="hover_content">
+									<p> Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.</p>
+								</div>
+							</div>
+							<div class="hover_comments">
+								<div class="hover_header">
+									<h1> Adriano da Silva </h1>
+									<div class="ndamdnamdna">
+										<p>Autor</p>
+										<i class="padding fas fa-check-double"></i>
+									</div>
+								</div>
+								<div class="hover_content">
+									<p> Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.</p>
+								</div>
+							</div>
+							<div class="hover_comments">
+								<div class="hover_header">
+									<h1> Adriano da Silva </h1>
+									<div class="ndamdnamdna">
+										<p>Autor</p>
+										<i class="padding fas fa-check-double"></i>
+									</div>
+								</div>
+								<div class="hover_content">
+									<p> Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.</p>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
